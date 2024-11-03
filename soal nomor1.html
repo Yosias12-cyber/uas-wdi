@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Pegawai Baru</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .form-section {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 48%;
+        }
+        legend {
+            padding: 0 10px;
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], input[type="date"], textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 50px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            text-align: center;
+            margin: 5px;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        .btn-cancel {
+            background-color: #f44336;
+        }
+        .btn-cancel:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>FORM PENDAFTARAN PEGAWAI BARU</h1>
+        <h2>PT. MERCU JAYA</h2>
+        <form action="#" method="post">
+            <div class="form-section">
+                <fieldset>
+                    <legend>DATA PRIBADI:</legend>
+                    <label for="nama_lengkap">Nama Lengkap:</label>
+                    <input type="text" id="nama_lengkap" name="nama_lengkap">
+                    <label for="gelar">Gelar:</label>
+                    <input type="text" id="gelar" name="gelar">
+                    <label for="tempat_lahir">Tempat Lahir:</label>
+                    <input type="text" id="tempat_lahir" name="tempat_lahir">
+                    <label for="tanggal_lahir">Tanggal Lahir:</label>
+                    <input type="date" id="tanggal_lahir" name="tanggal_lahir">
+                    <label for="jenis_kelamin">Jenis Kelamin:</label>
+                    <select id="jenis_kelamin" name="jenis_kelamin">
+                        <option value="laki-laki">Laki-laki</option>
+                        <option value="perempuan">Perempuan</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Alamat:</legend>
+                    <label for="alamat_ktp">Alamat Lengkap Sesuai KTP:</label>
+                    <input type="text" id="alamat_ktp" name="alamat_ktp">
+                    <label for="rt_rw">RT/RW:</label>
+                    <input type="text" id="rt_rw" name="rt_rw">
+                    <label for="kota_ktp">Kota:</label>
+                    <input type="text" id="kota_ktp" name="kota_ktp">
+                    <label for="alamat_domisili">Alamat Domisili:</label>
+                    <input type="text" id="alamat_domisili" name="alamat_domisili">
+                    <label for="kota_domisili">Kota:</label>
+                    <input type="text" id="kota_domisili" name="kota_domisili">
+                </fieldset>
+            </div>
+            <div class="form-section">
+                <fieldset>
+                    <legend>Data Pendidikan:</legend>
+                    <label for="pendidikan_terakhir">Pendidikan Terakhir:</label>
+                    <select id="pendidikan_terakhir" name="pendidikan_terakhir">
+                        <option value="s1">S1</option>
+                        <option value="s2">S2</option>
+                        <option value="s3">S3</option>
+                    </select>
+                    <label for="universitas">Sekolah/Universitas Pendidikan Terakhir:</label>
+                    <input type="text" id="universitas" name="universitas">
+                    <label for="kota_pendidikan">Kota Pendidikan Terakhir:</label>
+                    <input type="text" id="kota_pendidikan" name="kota_pendidikan">
+                    <label for="lama_studi">Lama Studi:</label>
+                    <input type="text" id="mulai_tahun" name="mulai_tahun" placeholder="Mulai Tahun">
+                    <input type="text" id="selesai_tahun" name="selesai_tahun" placeholder="Selesai Tahun">
+                    <label for="jurusan_pendidikan">Jurusan Pendidikan:</label>
+                    <input type="text" id="jurusan_pendidikan" name="jurusan_pendidikan">
+                </fieldset>
+                <fieldset>
+                    <legend>Kelebihan Diri Pendaftar:</legend>
+                    <textarea id="kelebihan" name="kelebihan" rows="14" cols="50"></textarea>
+                </fieldset>
+            </div>
+            <fieldset>
+                <legend>Alasan Mendaftar di PT. MERCU JAYA:</legend>
+                <textarea id="alasan" name="alasan" rows="4" cols="50"></textarea>
+            </fieldset>
+            <div class="buttons">
+                <input type="submit" class="btn" value="Submit">
+                <input type="button" class="btn btn-cancel" value="Cancel">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
